@@ -1,0 +1,24 @@
+{% extends "base.html" %} 
+
+
+{%block title %}Inicio{%endblock%}
+
+{%block content%}
+<br>
+
+<div class="container-sm text-center">
+
+    <h1 class="display-4"><strong>BIENVENIDOS A NUESTRO MUNDO DE SOLUCIONES</strong></h1>
+
+    <p class="lead">Aqui puedes conocer nuestro canales de ayuda somos recargaya tu cajero de recargas el cual podras tramitar tus retiros, depositos y apuestas conoce mas sobre nosotros y sumergete en el maravilloso mundo de las ganancias.</p>
+
+    <hr class="my-4">
+    <p><strong>¿Ya tienes una cuenta?</strong></p>
+    <div class="d-flex justify-content-center">
+        <a href="{{ url_for('auth.login') }}" class="btn btn-primary mx-2">Iniciar Sesión</a>
+        <a href="{{ url_for('auth.register') }}" class="btn btn-secondary mx-2">Registrarse</a>
+    </div>
+
+</div>
+
+{%endblock%}
